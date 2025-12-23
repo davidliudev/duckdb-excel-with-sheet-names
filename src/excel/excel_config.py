@@ -13,7 +13,8 @@ source_files += [
         'src/excel/numformat/nf_localedata.cpp',
         'src/excel/numformat/nf_zformat.cpp',
         'src/excel/xlsx/read_xlsx.cpp',
-        'src/excel/xlsx/write_xlsx.cpp',
+        'src/excel/xlsx/read_xlsx_metadata.cpp',
+        'src/excel/xlsx/copy_xlsx.cpp',
         'src/excel/xlsx/zip_file.cpp',
     ]
 ]

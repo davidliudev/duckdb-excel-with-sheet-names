@@ -1,0 +1,8 @@
+require excel
+
+query II
+SELECT * FROM read_xlsx_metadata('test/data/xlsx/two_sheets.xlsx') ORDER BY sheet_index;
+----
+Sheet1	0
+My Sheet	1
+

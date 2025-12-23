@@ -9,6 +9,7 @@
 #include "nf_localedata.h"
 #include "nf_zformat.h"
 #include "xlsx/read_xlsx.hpp"
+#include "xlsx/read_xlsx_metadata.hpp"
 
 #include <duckdb/common/types/time.hpp>
 
@@ -81,6 +82,7 @@ static void LoadInternal(ExtensionLoader &loader) {
 
 	// Register the XLSX functions
 	ReadXLSX::Register(loader);
+	ReadXLSXMetadata::Register(loader);
 	WriteXLSX::Register(loader);
 }
 
