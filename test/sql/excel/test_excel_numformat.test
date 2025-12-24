@@ -4,7 +4,7 @@
 
 mode skip
 
-require excel
+require excel_metadata
 
 statement ok
 PRAGMA enable_verification

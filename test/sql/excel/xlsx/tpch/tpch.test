@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 require tpch
 

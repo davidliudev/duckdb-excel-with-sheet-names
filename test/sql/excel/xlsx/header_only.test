@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 query IIII
 select * from read_xlsx('test/data/xlsx/header_only.xlsx')

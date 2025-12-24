@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 query III
 select * from 'test/data/xlsx/phonetic.xlsx';

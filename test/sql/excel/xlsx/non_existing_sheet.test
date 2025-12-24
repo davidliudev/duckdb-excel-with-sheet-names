@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 statement error
 SELECT * FROM read_xlsx('test/data/xlsx/google_sheets.xlsx', sheet='FooBar');

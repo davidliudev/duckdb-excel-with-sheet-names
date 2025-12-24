@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8.12...3.29)
-set(TARGET_NAME excel)
+set(TARGET_NAME excel_metadata)
 set(EXTENSION_NAME ${TARGET_NAME}_extension)
 set(LOADABLE_EXTENSION_NAME ${TARGET_NAME}_loadable_extension)
 
-project(ExcelExtension)
+project(ExcelMetadataExtension)
 
 if (EMSCRIPTEN)
   # _LINKED_LIBS influences only Wasm compilation

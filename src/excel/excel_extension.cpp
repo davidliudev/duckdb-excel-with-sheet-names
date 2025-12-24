@@ -1,4 +1,4 @@
-#include "excel_extension.hpp"
+#include "excel_metadata_extension.hpp"
 
 #include "duckdb.hpp"
 #include "duckdb/common/exception.hpp"
@@ -86,19 +86,19 @@ static void LoadInternal(ExtensionLoader &loader) {
 	WriteXLSX::Register(loader);
 }
 
-void ExcelExtension::Load(ExtensionLoader &loader) {
+void ExcelMetadataExtension::Load(ExtensionLoader &loader) {
 	LoadInternal(loader);
 }
 
-std::string ExcelExtension::Name() {
-	return "excel";
+std::string ExcelMetadataExtension::Name() {
+	return "excel_metadata";
 }
 
 } // namespace duckdb
 
 extern "C" {
 
-DUCKDB_CPP_EXTENSION_ENTRY(excel, loader) {
+DUCKDB_CPP_EXTENSION_ENTRY(excel_metadata, loader) {
 	duckdb::LoadInternal(loader);
 }
 

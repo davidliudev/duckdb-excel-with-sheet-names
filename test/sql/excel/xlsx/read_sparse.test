@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 # We read a single cell far away in the sheet, its interpreted as the header
 query I

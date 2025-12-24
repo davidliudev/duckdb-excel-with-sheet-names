@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 # Try reading a file with collapsed cells
 

@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 # By default we try to auto infer the first row as a header
 query III

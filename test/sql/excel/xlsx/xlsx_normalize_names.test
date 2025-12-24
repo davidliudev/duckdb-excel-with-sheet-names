@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 statement ok
 CREATE TABLE t1 AS SELECT * FROM read_xlsx('./test/data/xlsx/normalize_names_1.xlsx', normalize_names := false, header := true);

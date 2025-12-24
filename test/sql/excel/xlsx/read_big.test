@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 query IIII
 SELECT sum(Col1), count(Col1), max(Col1), min(Col1) FROM 'test/data/xlsx/2x3000.xlsx'

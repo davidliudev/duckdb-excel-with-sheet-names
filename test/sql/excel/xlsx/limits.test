@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 require no_extension_autoloading "FIXME: make copy to functions autoloadable"
 

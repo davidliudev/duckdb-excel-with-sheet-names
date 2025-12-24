@@ -18,7 +18,7 @@ jobs:
     with:
       duckdb_version: main
       ci_tools_version: main
-      extension_name: excel
+      extension_name: excel_metadata
 
   duckdb-stable-deploy:
     name: Deploy extension binaries
@@ -29,6 +29,6 @@ jobs:
     with:
       duckdb_version: v1.3.2
       ci_tools_version: v1.3.2
-      extension_name: excel
+      extension_name: excel_metadata
       deploy_latest: ${{ startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main' }}
       deploy_versioned: ${{ startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/main' }}

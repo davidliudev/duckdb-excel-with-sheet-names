@@ -1,4 +1,4 @@
-require excel
+require excel_metadata
 
 # By default we use the first sheet
 query II
