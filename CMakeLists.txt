@@ -17,19 +17,16 @@ find_package(EXPAT REQUIRED)
 find_package(ZLIB REQUIRED)
 find_package(minizip-ng CONFIG REQUIRED)
 
-include_directories(src/excel/numformat/include)
 include_directories(src/excel/include)
-add_subdirectory(src/excel/numformat)
 
-set(EXTENSION_SOURCES src/excel/excel_extension.cpp src/excel/xlsx/zip_file.cpp
-                      src/excel/xlsx/read_xlsx.cpp src/excel/xlsx/read_xlsx_metadata.cpp
-                      src/excel/xlsx/copy_xlsx.cpp)
+set(EXTENSION_SOURCES
+    src/excel/excel_extension.cpp
+    src/excel/xlsx/read_xlsx_metadata.cpp
+    src/excel/xlsx/zip_file.cpp)
 
-build_static_extension(${TARGET_NAME} ${EXTENSION_SOURCES}
-                       ${NUMFORMAT_OBJECT_FILES})
+build_static_extension(${TARGET_NAME} ${EXTENSION_SOURCES})
 set(PARAMETERS "-warnings")
-build_loadable_extension(${TARGET_NAME} ${PARAMETERS} ${EXTENSION_SOURCES}
-                         ${NUMFORMAT_OBJECT_FILES})
+build_loadable_extension(${TARGET_NAME} ${PARAMETERS} ${EXTENSION_SOURCES})
 
 target_link_libraries(${EXTENSION_NAME} EXPAT::EXPAT MINIZIP::minizip-ng
                       ZLIB::ZLIB)

@@ -1,6 +1,0 @@
-require excel_metadata
-
-query III
-select * from 'test/data/xlsx/non_sequential.xlsx';
-----
-this	will	break

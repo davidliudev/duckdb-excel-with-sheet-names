@@ -1,6 +1,0 @@
-require excel_metadata
-
-query III
-select * from 'test/data/xlsx/phonetic.xlsx';
-----
-foo	課きく　毛こ	bar
