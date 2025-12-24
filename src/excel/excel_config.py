@@ -5,7 +5,7 @@ include_directories = [
     os.path.sep.join(x.split('/')) for x in ['src/excel/include']
 ]
 # source files
-source_files = [os.path.sep.join(x.split('/')) for x in ['src/excel/excel_extension.cpp']]
+source_files = [os.path.sep.join(x.split('/')) for x in ['src/excel/excel_metadata_extension.cpp']]
 source_files += [
     os.path.sep.join(x.split('/'))
     for x in [

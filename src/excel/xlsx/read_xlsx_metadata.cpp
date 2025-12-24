@@ -155,4 +155,3 @@ void ReadXLSXMetadata::Register(ExtensionLoader &loader) {
 }
 
 } // namespace duckdb
-

@@ -20,7 +20,7 @@ find_package(minizip-ng CONFIG REQUIRED)
 include_directories(src/excel/include)
 
 set(EXTENSION_SOURCES
-    src/excel/excel_extension.cpp
+    src/excel/excel_metadata_extension.cpp
     src/excel/xlsx/read_xlsx_metadata.cpp
     src/excel/xlsx/zip_file.cpp)
 
